@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+     <meta name="description" content="Restaurants, parks, museums, events">
+    <meta name="keywords" content="Restaurants, parks, museums, events">
+    <title>Home</title>
+   
+    <link href="style.css" rel="stylesheet" />
+    <link href="swiper.min.css" rel="stylesheet" />
+      <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAe6OIjkAbKm7U4Uc18AunKZC6pVV7ty1E"></script>
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+</head>
+<body>
+    <section class="content-container">
+    <header>
+        <nav class="nav nav-stacked nav-pc">
+            <ul>
+                <li class="active">
+                    <a href="Index.html" class="nav-item">Home</a>
+                </li>
+                <li>
+                    <a href="Introduction.html" class="nav-item">Introduction</a>
+                </li>
+                
+                <li>
+                    <a href="contact.html" class="nav-item">Contact</a>
+                </li>
+                
+            </ul>
+            <div class="search">
+                <i class="ico-search"></i>
+                <input type="text" name="s" placeholder="search" />
+
+
+            </div>     
+        </nav>
+    </header>
+        
+       
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/show1.jpg" width="100%" height="500" />
+                    
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/show2.jpg" width="100%" height="500" />
+                    
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/show3.jpg" width="100%" height="500" />
+                    
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/show4.jpg" width="100%" height="500" />
+                    
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            
+        </div>
+
+        <aside class="left-box">
+        <div class="text-img team">
+            <h2>Photo Shows</h2>
+            <div class="text">
+                <ul>
+                    <li>
+                        <div class="img fl">
+                            <img src="images/show1.jpg" alt="Xuanwu Lake Park" width="100" hight="100" />
+                        </div>
+                        <h3>Xuanwu Lake Park</h3>
+                        <p>
+                          Xuanwu Lake Park is located in Xuanwu District, Nanjing East pillow Purple Mountain, west of Ming City wall, is China's largest royal garden lake.
+                           
+                          
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img fl">
+                            <img src="images/show2.jpg" alt="Purple Mountain" width="100" hight="100" />
+                        </div>
+                        <h3>Purple Mountain</h3>
+                        <p>
+                          Purple Mountain is located in Nanjing Xuanwu District, also known as Zhongshan, Jiangnan one of the four famous mountains, "Jinling Yuxiu" reputation.
+                           
+                          
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img fl">
+                            <img src="images/show3.jpg" alt="Nanjing Confucius Temple" width="100" hight="100" />
+                        </div>
+                        <h3>Nanjing Confucius Temple</h3>
+                        <p>
+                          Nanjing Confucius Temple is located in Nanjing Qinhuai Qinhuai River North Gongyuan Street, west of the south of the Gongyuan, Nanjing Confucius Temple, Nanjing Confucian Temple, Wenxuan Wangmiao, for the worship of Confucius.
+                           
+                          
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img fl">
+                            <img src="images/show4.jpg" alt="Qinhuai River" width="100" hight="100" />
+                        </div>
+                        <h3>Qinhuai River</h3>
+                        <p>
+                          Qinhuai River, the tributary of the right bank of the lower reaches of the Yangtze River in China. Ancient possession of possession of Long Pu, the Han Dynasty called Huai River, later renamed Qinhuai Tang.
+                           
+                          
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="pro-box about">
+            <h2><a class="more" href="https://kobebryant.com/">ABOUT</a></h2>
+           
+            <p>
+                For this assignment, you will be creating a simple website to act as a guide to your favorite city. Your website should highlight 4-5 of your favorite places in your favorite city. These can include restaurants, parks, museums, activities, or other features you enjoy about the city.
+
+            </p>
+            <p>
+                Your content should be well organized and include many of the HTML elements we have learned so far, such as headings, paragraphs, lists, and emphasized text.
+
+            </p>
+            <p>
+                Do not worry about the style and appearance of your site as much- focus on content structure, and writing good effective content.
+
+            </p>
+           
+           
+        </div>
+
+
+        <div class="text-img team">
+            <h2>Contact</h2>
+            <form action="" method="post" id="contactform">
+
+            <fieldset class="row">
+
+               
+
+                <p>
+                    <label for="your-name">Your Name</label>
+                    <input type="text" name="name" id="your-name" class="input-xlarge">
+                </p>
+
+                <p>
+                    <label for="your-email">Your Email <span class="required">(required)</span></label>
+                    <input type="email" name="email" id="your-email" class="input-xlarge" required="">
+                </p>
+
+                <p>
+                    <label for="your-subject">Subject</label>
+                    <input type="text" name="subject" id="your-subject" class="input-xlarge">
+                </p>
+
+                <p>
+                    <label for="your-message">Your message <span class="required">(required)</span></label>
+                    <textarea name="message" cols="50" rows="10" id="your-message" class="input-xxlarge" required="" placeholder="What do you want to say?"></textarea>
+                </p>
+
+               
+
+                <p>
+                    <input type="submit" name="submit" class="primary" value="Send Message">
+                </p>
+
+                
+
+            </fieldset>
+
+        </form>
+        <div id="map" style="width:50%;height:300px;"></div>    
+        </div>
+
+        </aside>
+
+        <div class="hot-place">
+            <h2>HOTS</h2>
+            <ul class="hots">
+                <li>
+                    <a href="">Xuanwu Lake Park</a>
+                </li>
+                <li>
+                    <a href="">Purple Mountain</a>
+                </li>
+                <li>
+                    <a href="">Nanjing Confucius Temple</a>
+                </li>
+                <li>
+                    <a href="">Qinhuai River</a>
+                </li>
+            </ul>
+        </div>
+        <!-- go top -->
+        <a id="gotop" href="#">Top</a>
+         <footer class="footer">
+                
+                <div class="address">
+                    <a href="Index.html" class="nav-item">Home</a>    |    
+                    <a href="Introduction.html" class="nav-item">Introduction</a>    |    
+                    <a href="contact.html" class="nav-item">Contact</a>     
+                    
+                </div>
+        </footer>
+        
+       
+        
+    </section>
+   <!-- Swiper -->
+
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          spaceBetween: 0,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          }
+        });
+      </script>
+    
+</body>
+</html>
